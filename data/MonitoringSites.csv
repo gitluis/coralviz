@@ -1,4 +1,4 @@
-id,REGION,SUBREGION,COUNTRY,PROGRAM_NAME,PROGRAM_CODE,YEAR,SITE_CODE,SITE_NAME,LAT,LON,WATER_DEPTH,SOURCES,COUNTRY_CODE
+id,region,subregion,country,program_name,program_code,year,site_code,site_name,lat,lon,water_depth,sources,country_code
 1,Australia,Australia and Papua New Guinea,Papua New Guinea,Locally Managed Marine Area,LMMA,1993,Kilu-Tamare;  Kimbe Bay,Gavagava,-5.437,150.093,492 km2,,PNG
 2,Australia,Australia and Papua New Guinea,Papua New Guinea,Locally Managed Marine Area,LMMA,1993,Kilu-Tamare; Kimbe Bay,Lady Di,-5.442,150.099,,,PNG
 3,Australia,Australia and Papua New Guinea,Papua New Guinea,Locally Managed Marine Area,LMMA,1993,Kilu-Tamare; Kimbe Bay,Limuka,-5.437,150.098,,,PNG

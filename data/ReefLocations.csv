@@ -1,4 +1,4 @@
-id,REGION,SUBREGION,COUNTRY,LOCATION,LAT,LON,REEF_SYSTEM,REEF_TYPE,REEF_NAME,WATER_DEPTH,ISLAND_NAME,PROTECTED,TOURISM,COUNTRY_CODE
+id,region,subregion,country,location,lat,lon,reef_system,reef_type,reef_name,water_depth,island_name,protected,tourism,country_code
 1,Pacific,Southeast and Central Pacific,Kiribati,,1.71667,173,Gilbert Islands,Atoll,Abaiang,,Gilbert,0,0,KIR
 2,Pacific,Southeast and Central Pacific,Kiribati,,0.33333,173.83333,Gilbert Islands,Atoll,Abemama,,Gilbert,0,0,KIR
 3,Australia,Australia and Papua New Guinea,Australia,Western Australia,-15.51667,123.15,Kimberley region,Fringing,Adele Islands,,Australia,0,0,AUS
