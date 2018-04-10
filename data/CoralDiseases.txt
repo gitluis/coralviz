@@ -1,0 +1,48 @@
+ReefBase Dataset: CORAL DISEASES
+
+DATASET DESCRIPTION:
+Coral Diseases data originally from the Global Coral Disease database compiled by UNEP-WCMC. For further 
+information about this dataset see: http://www.unep-wcmc.org/marine/coraldis/home.htm
+The UNEP-WCMC website also allows you to submit your own observations of coral diseases to their database.
+
+
+ATTRIBUTE DATA:
+Below are the Coral bleaching attribute data.
+
+Field name		Description
+
+ID			- ReefBase GIS ID
+Disease_type		- Coral disease name
+Year 			- Year coral disease occurred
+Lat			- Latitude of observation
+Lon			- Longitude of observation
+Region 			- ReefBase regional name
+Subregion		- ReefBase sub regional name
+Country 		- ReefBase country name
+Location		- Location where disease was observed
+Nearest_town		- Nearest town where disease was observed
+Genus_species		- Coral Genus Species
+Percentage_Incidence	- Percentage of coral disease (%)
+Disease_remarks		- Notes about coral diseases
+Mortality_percentage	- Mortality percentage (%)
+Diseased_percentage	- Diseased area affected (%)
+Reference_id		- ReefBase reference ID
+Remarks			- Observer remarks
+Country_code		- ReefBase Country Code
+Source			- ReefBase Source
+
+
+COPYRIGHT AND USE OF DATA
+Please refer to the specific terms and conditions for use of this ReefBase dataset, as outlined in the
+"ReefBase Data License".
+
+
+CONTACT:
+For further questions, comments, or remarks about the ReefBase Coral Diseases dataset,
+please contact us:
+
+ReefBase Project
+The WorldFish Center
+PO Box 500 GPO
+10670 Penang, Malaysia
+reefbase@cgiar.org

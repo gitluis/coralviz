@@ -1,0 +1,41 @@
+ReefBase Dataset: MONITORING SITES
+
+DATASET DESCRIPTION:
+Data on coral reef monitoring sites was compiled by Dr. Jamie Oliver at WorldFish Center, using information 
+from a variety of sources. The current, rather incomplete, list will be updated in the near future.
+
+ATTRIBUTE DATA:
+Records in the MONITORING SITES dataset include the following attribute data:
+
+Field name		Description
+
+ID			- ReefBase GIS ID
+Region			- ReefBase regional name
+Subregion		- ReefBase sub regional name
+Country			- ReefBase country name
+Program_name		- Monitoring program name
+Program_code		- Monitoring program abbreviation name
+Year			- Monitoring Site establishment year
+site_code		- Monitoring site code
+site_name		- Monitoring site name
+Lat			- Latitude of site
+Lon			- Longitude of site
+Water_depth			- Monitoring sea water depth level
+Sources			- Original contact 
+Country_Code		- ReefBase Country Code
+
+
+COPYRIGHT AND USE OF DATA
+Please refer to the specific terms and conditions for use of this ReefBase dataset, as outlined in the
+"ReefBase Data License".
+
+
+CONTACT:
+For further questions, comments, or remarks about the ReefBase Monitoring Sites dataset,
+please contact us:
+
+ReefBase Project
+The WorldFish Center
+PO Box 500 GPO
+10670 Penang, Malaysia
+reefbase@cgiar.org
