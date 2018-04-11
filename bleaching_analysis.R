@@ -112,6 +112,28 @@ length(which(ds$percentage_affected == "")) / nrow(ds) * 100
 ## 25% may be used as sample for graph
 ##
 
+# regex for float or int numbers only
+p = "([0-9]+)(.*)([0-9]+)"
+
+# take sample (non-NAs) and extract numbers only from strings
+sample_rows = which(ds$percentage_affected != "")
+sample = ds$percentage_affected[sample_rows]
+sample = str_extract(sample, p)
+
+sample_numbers_only_rows = which(!is.na(sample))
+sample = sample[sample_numbers_only_rows]
+
+# remove hyphen symbol (-) and find average
+rm_hyphen = function(v){
+  # parse numbers then calculate mean
+  v = mean(as.numeric(unlist(strsplit(v, "-"))))
+  # format number with 2 decimal digits only
+  v = format(round(v, 2), nsmall=2)
+  return(v)
+}
+
+sample = as.numeric(unlist(lapply(sample, rm_hyphen)))
+
 
 # verify bleaching duration time
 length(which(ds$bleaching_duration == ""))
