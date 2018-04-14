@@ -1,9 +1,7 @@
 
 ##############################################################################################################
 ## CAP 6737 - Final Project - Coral Data Visualization
-## 
 ## Name: Luis A. Rivera Morales
-## UCF ID: 4402075
 ##############################################################################################################
 
 # set working dir
@@ -32,9 +30,9 @@ ds.numeric = ds[ , sapply(ds, is.numeric)]
 ds.categorical = ds[ , sapply(ds, is.factor)]
 
 
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 ## Data Analysis
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 
 #install.packages("ggplot2")
 require(ggplot2, quietly=TRUE, warn.conflicts=FALSE)
@@ -56,9 +54,6 @@ barchart = function(i){
 # check structure & analyze variables
 str(ds)
 
-# print a summary of the dataset
-summary(ds)
-
 
 # plot histograms of numerical variables
 lapply(1:3, histogram)
@@ -75,11 +70,10 @@ barchart(get_column_index("bleaching_severity", ds.categorical))
 barchart(get_column_index("mortality", ds.categorical))
 
 
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 ## Numerical/Categorical Variables Recoding for Coral Bleaching
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 require(stringr, quietly=TRUE, warn.conflicts=FALSE)
-
 
 # lowercase bleaching severity levels & show graph
 levels(ds$bleaching_severity) = c("High", "Low", "Medium", "No Bleaching", "Unknown")
@@ -93,71 +87,186 @@ levels(ds$region)[1] = "NA"
 levels(ds$subregion)[1] = "NA"
 
 
-# verify percentage of mortalities and codes
-length(which(is.na(ds$mortality_code)))
-length(which(is.na(ds$mortality_code))) / nrow(ds) * 100
+# re-code coral families
+# ----------------------
+str(ds$coral_family)
+families = ds$coral_family
 
-##
-## 91% of 'mortality_code' and 'mortality' are NA's
-## 9% may be used as sample for graph
-##
+comma_in_string = function(x){
+  return( grepl(",", x) )
+}
+
+# retrieve which families can be converted
+rows = comma_in_string( levels(families) )
+levels(families)[rows] = "Mixed"
+
+# save variable
+ds$coral_family = families
+
+# show graph
+ds.categorical = ds[ , sapply(ds, is.factor)]
+barchart(get_column_index("coral_family", ds.categorical))
 
 
-# verify percentage of coral affected by bleaching
+# convert mortality code to factor
+# --------------------------------
+summary(ds$mortality_code)
+
+# 92% missing data
+5681/nrow(ds) * 100
+
+# convert
+mc = as.factor(ds$mortality_code)
+mc[which(is.na(mc))] = NA
+
+# save
+ds$mortality_code = mc
+
+
+# regex for float or int numbers only
+p_num = "\\d+\\.*\\d*"
+
+# verify coral mortality level (%)
+# --------------------------------
+#   92% of 'mortalitly' levels is missing data
+length(which(ds$mortality == ""))
+length(which(ds$mortality == "")) / nrow(ds) * 100
+
+# take sample (non-NAs)
+m = ds$mortality
+sample_rows = which(m != "")
+
+# extract numbers from strings
+sample = m[sample_rows]
+sample = str_extract(sample, p_num)
+
+# convert to numeric
+sample = as.numeric(format(round(as.numeric(sample), 2), nsmall=2))
+
+# prepare cleaned data
+m = rep(NA, nrow(ds))
+m[sample_rows] = sample
+
+# conver any mortality % over 100 to NA
+m[which(m > 100)] = NA
+
+# check stats
+summary(m)
+nrow(ds) - 5857 == length(sample_rows)
+
+# save
+ds$mortality = m
+
+# re-calculate coral mortality level proportions
+length(which(is.na(m)))
+length(which(is.na(m))) / nrow(ds) * 100
+
+# so we ended up with 94% of 'mortality' levels missing
+# and 6% of data being good...
+
+
+# verify coral affected by bleaching (%)
+# --------------------------------------
+#   75% of 'percentage_affected' is missing data
 length(which(ds$percentage_affected == ""))
 length(which(ds$percentage_affected == "")) / nrow(ds) * 100
 
-##
-## 75% of 'percentage_affected' are NA's
-## 25% may be used as sample for graph
-##
+# take sample (non-NAs)
+perc_affected = ds$percentage_affected
+sample_rows = which(perc_affected != "")
 
-# regex for float or int numbers only
-p = "([0-9]+)(.*)([0-9]+)"
+# extract numbers from strings
+sample = perc_affected[sample_rows]
+sample = str_extract(sample, p_num)
 
-# take sample (non-NAs) and extract numbers only from strings
-sample_rows = which(ds$percentage_affected != "")
-sample = ds$percentage_affected[sample_rows]
-sample = str_extract(sample, p)
+# convert to numeric
+sample = as.numeric(format(round(as.numeric(sample), 2), nsmall=2))
 
-sample_numbers_only_rows = which(!is.na(sample))
-sample = sample[sample_numbers_only_rows]
+# prepare cleaned data
+perc_affected = rep(NA, nrow(ds))
+perc_affected[sample_rows] = sample
 
-# remove hyphen symbol (-) and find average
-rm_hyphen = function(v){
-  # parse numbers then calculate mean
-  v = mean(as.numeric(unlist(strsplit(v, "-"))))
-  # format number with 2 decimal digits only
-  v = format(round(v, 2), nsmall=2)
-  return(v)
+# check stats
+summary(perc_affected)
+nrow(ds) - 4591 == length(sample_rows)
+
+# save
+ds$percentage_affected = perc_affected
+
+
+# how much data from mortality and percentage affected
+# variables can we use in reality for graphs?
+m_rows = which(!is.na(m))
+tmp_data = cbind(mortality=m[m_rows], percentage_affected=perc_affected[m_rows])
+
+nrow(na.omit(tmp_data))
+
+# view data
+View(na.omit(tmp_data))
+
+# Answer: There are 103 observations that we can use.
+
+
+# verify sea water temperature for observations
+# ---------------------------------------------
+#   83% of 'water_temperature' is missing data
+length(which(ds$water_temperature == ""))
+length(which(ds$water_temperature == "")) / nrow(ds) * 100
+
+# take sample (non-NAs)
+water_temp = ds$water_temperature
+sample_rows = which(water_temp != "")
+
+# extract numbers from strings
+sample = water_temp[sample_rows]
+sample = str_extract(sample, p_num)
+
+# convert to numeric
+sample = as.numeric(format(round(as.numeric(sample), 2), nsmall=2))
+
+# Function: Converts emperature from Fahrenheit to Celsius
+F_to_C = function(f){
+  temp = (f - 32) / 1.8
+  temp = as.numeric(format(round(temp, 2), nsmall=2))
+  return(temp)
 }
 
-sample = as.numeric(unlist(lapply(sample, rm_hyphen)))
+# any temp > 90 --- set to 90 F
+sample[sample > 90] = 90
+summary(sample)
 
+# any temp > 50 --- to Celsius
+over_50_rows = sample > 50
+sample[over_50_rows] = sapply(sample[over_50_rows], F_to_C)
+sample[sample > 32.22] = 32.22
+summary(sample)
 
-# verify bleaching duration time
-length(which(ds$bleaching_duration == ""))
-length(which(ds$bleaching_duration == "")) / nrow(ds) * 100
+# prepare cleaned data
+water_temp = rep(NA, nrow(ds))
+water_temp[sample_rows] = sample
 
-##
-## 95% of 'bleaching_duration' are NA's
-## 5% may be used as sample for graph
-##
+# check stats
+summary(water_temp)
+nrow(ds) - 5124 == length(sample_rows)
+
+# save
+ds$water_temperature = water_temp
 
 
 # drop any variables that will not be used
+ds = ds[, -which(colnames(ds) == "month")]
+ds = ds[, -which(colnames(ds) == "bleaching_duration")]
 ds = ds[, -which(colnames(ds) == "recovery_code")]
 ds = ds[, -which(colnames(ds) == "reference_code")]
-
 ds = ds[, -which(colnames(ds) == "remarks")]
 ds = ds[, -which(colnames(ds) == "other_factors")]
 ds = ds[, -which(colnames(ds) == "survey_area")]
 ds = ds[, -which(colnames(ds) == "survey_type")]
 ds = ds[, -which(colnames(ds) == "recovery")]
 
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 # Export prepared dataset(s)
-##############################################################################################################
+## -----------------------------------------------------------------------------------------------------------
 write.csv(ds, file="data/CoralBleaching.csv", na="", row.names=FALSE, col.names=TRUE)
 
 

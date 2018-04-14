@@ -1,8 +1,8 @@
 
-## -----------------------------------------------------------------------------------------------------------
+##############################################################################################################
 ## CAP 6737 - Final Project - Coral Data Visualization
 ## Name: Luis A. Rivera Morales
-## -----------------------------------------------------------------------------------------------------------
+##############################################################################################################
 
 # set working dir
 setwd("C:/Users/groot/Desktop/gitluis/coralviz")
@@ -21,11 +21,13 @@ setwd("C:/Users/groot/Desktop/gitluis/coralviz")
 ## different forms which could even lead to detecting any similarities in between the coral samples.
 
 # read Coral dataset
-ds = read.csv("data/CoralBleachingRaw.csv")
-ds.raw = ds
-
 ds = read.csv("data/CoralDiseasesRaw.csv")
 ds.raw = ds
+
+
+# separate numerical variables from categorical variables
+ds.numeric = ds[ , sapply(ds, is.numeric)]
+ds.categorical = ds[ , sapply(ds, is.factor)]
 
 
 ## -----------------------------------------------------------------------------------------------------------
@@ -52,71 +54,55 @@ barchart = function(i){
 # check structure & analyze variables
 str(ds)
 
-# print a summary of the dataset
-summary(ds)
 
-
-# separate numerical variables from categorical variables
-ds.numeric = ds[ , sapply(ds, is.numeric)]
-ds.categorical = ds[ , sapply(ds, is.factor)]
-
-
-# generate summary statistics of numerical variables
-#install.packages("e1071")
-require(e1071, quietly=TRUE, warn.conflicts=FALSE)
-
-ds.stats = as.data.frame(t(do.call(cbind, lapply(ds.numeric, summary))))
-ds.stats$skewness = as.data.frame(t(do.call(cbind, lapply(na.omit(ds.numeric), skewness))))[,1]
-ds.stats$kurtosis = as.data.frame(t(do.call(cbind, lapply(na.omit(ds.numeric), kurtosis))))[,1]
+# disease proportions
+summary(ds$disease_type)
 
 
 # plot histograms of numerical variables
-lapply(1:3, histogram)
-lapply(4:6, histogram)
-lapply(7:9, histogram)
+lapply(1:5, histogram)
 
 
 # plot bar charts of categorical variables
+barchart(get_column_index("disease_type", ds.categorical))
 barchart(get_column_index("region", ds.categorical))
 barchart(get_column_index("subregion", ds.categorical))
-
-barchart(get_column_index("bleaching_severity", ds.categorical))
-barchart(get_column_index("mortality", ds.categorical))
 
 
 ## -----------------------------------------------------------------------------------------------------------
 ## Numerical/Categorical Variables Recoding for Coral Bleaching
 ## -----------------------------------------------------------------------------------------------------------
+require(stringr, quietly=TRUE, warn.conflicts=FALSE)
+
+
+# re-code all levels that have under 125 observations
+# in disease_type variable to Other
+rows = which( summary(ds$disease_type) < 125)
+levels(ds$disease_type)[rows] = "Other"
+
+# re-code unspecified diseases to Oher as well
+levels(ds$disease_type)[4] = "Other"
+
+summary(ds$disease_type)
+
+ds.categorical = ds[ , sapply(ds, is.factor)]
+barchart(get_column_index("disease_type", ds.categorical))
+
 
 # replace empty levels with no data (NA)
 levels(ds$region)[1] = "NA"
 levels(ds$subregion)[1] = "NA"
 
 
-# clean up percentage of coral affected by bleaching
-length(which(ds$percentage_affected == ""))
-length(which(ds$percentage_affected == "")) / nrow(ds) * 100
-
-##
-## 75% of 'percentage_affected' are NA's
-## data is no good for visual graph
-##
-
-
-# clean up bleaching duration time
-length(which(ds$bleaching_duration == ""))
-length(which(ds$bleaching_duration == "")) / nrow(ds) * 100
-
-##
-## 95% of 'bleaching_duration' are NA's
-## data is no good for visual graph
-##
-
+# drop any variables that will not be used
+ds = ds[, -which(colnames(ds) == "reference_id")]
+ds = ds[, -which(colnames(ds) == "disease_remarks")]
+ds = ds[, -which(colnames(ds) == "remarks")]
 
 ## -----------------------------------------------------------------------------------------------------------
 # Export prepared dataset(s)
 ## -----------------------------------------------------------------------------------------------------------
-write.csv(ds, file="data/CoralBleaching.csv", na="", row.names=FALSE, col.names=TRUE)
+write.csv(ds, file="data/CoralDiseases.csv", na="", row.names=FALSE, col.names=TRUE)
 
 
 
