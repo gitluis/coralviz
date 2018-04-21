@@ -101,6 +101,9 @@ Data: `CoralDisease.csv`
 | Percentage of Coral Disease by Area Affected | Percentage of coral disease incidence (rate) versus diseases area affected in the coral reef. |
 | Percentage of Coral Disease by Mortality Level | Percentage of coral disease incidence (rate) as mortality level increases. |
 
+## License
+Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information. Any work from NOAA or ReefBase must follow their respective citation, licensing and terms accordingly. Go to [NOAA.gov](http://www.noaa.gov/) or [ReefBase.org](http://www.reefbase.org/main.aspx) for more information.
+
 ## References
 [1] NOAA. Are corals animals or plants? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on 04/21/2018.
 
@@ -113,21 +116,35 @@ Data: `CoralDisease.csv`
 [5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
 
 ## Appendix
+### Figure 1. Coral Bleaching
 ![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
 
-Figure 1. Coral Bleaching
-
+### Figure 2. Coral Threats
 ![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
 
-Figure 2. Coral Threats
-
+### Figure 3. Healthy Coral
 ![](https://github.com/gitluis/coralviz/blob/master/images/healthy%20coral.jpg)
 
-Figure 3. Healthy Coral
-
+### Figure 4. Bleaching Coral
 ![](https://github.com/gitluis/coralviz/blob/master/images/bleaching%20coral.jpg)
 
-Figure 4. Bleaching Coral
+### Figure 5. Black-band Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/black-band%20disease.jpg)
 
-## License
-Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
+### Figure 6. White-band Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/white-band%20disease.jpg)
+
+### Figure 7. White plague Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/white%20plague%20disease.jpg)
+
+### Figure 8. Yellow-band, White-band, Black-band Diseases
+![](https://github.com/gitluis/coralviz/blob/master/images/black%20white%20and%20yellow%20band%20disease.jpg)
+
+### Figure 9. Dark-spot Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/coral%20dark%20spot%20disease.jpg)
+
+### Figure 10. White Pox Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/white%20pox%20disease.jpg)
+
+### Figure 11. White Plague Type 2 Disease
+![](https://github.com/gitluis/coralviz/blob/master/images/white%20plague%20type%20ii%20disease.jpg)
