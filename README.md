@@ -101,9 +101,6 @@ Data: `CoralDisease.csv`
 | Percentage of Coral Disease by Area Affected | Percentage of coral disease incidence (rate) versus diseases area affected in the coral reef. |
 | Percentage of Coral Disease by Mortality Level | Percentage of coral disease incidence (rate) as mortality level increases. |
 
-## License
-Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
-
 ## References
 [1] NOAA. Are corals animals or plants? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on 04/21/2018.
 
@@ -124,3 +121,11 @@ Figure 2. Coral Threats
 
 ![](https://github.com/gitluis/coralviz/blob/master/images/healthy%20coral.jpg)
 Figure 3. Healthy Coral
+
+![](https://github.com/gitluis/coralviz/blob/master/images/bleaching%20coral.jpg)
+Figure 4. Bleaching Coral
+
+
+
+## License
+Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
