@@ -9,6 +9,13 @@ The idea is to obtain a coral dataset containing coral information such as locat
 ## Datasets
 Coral datasets available inside the `data` directory. Coral data sets descriptions can also be found in text format inside the `data` directory.
 
+## Introduction
+- [Coral Reefs 101 by National Geographic](https://www.youtube.com/watch?v=ZiULxLLP32s)
+
+Other Videos:
+- https://youtu.be/4RUGmBxe65U?t=46
+- https://youtu.be/5ET2B-bEduc?t=5
+
 ## Coral Bleaching & Diseases
 Coral Bleaching is the process by which coral losses its own major source of food which is algae surrounding it (Figure 1). When algae leave the coral, it becomes vulnerable to diseases. This can be caused by many factors such as changes in ocean temperature, ocean pollution, overexposure to sunlight, extreme low tides, overall climate changes (CO2), ocean acidification (pH level changes), climate precipitation, altered ocean currents, storms, sea level rise, global warming and among many other (Figure 2).
 
