@@ -116,35 +116,35 @@ Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for mor
 [5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
 
 ## Appendix
-### Figure 1. Coral Bleaching
+##### Figure 1. Coral Bleaching
 ![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
 
-### Figure 2. Coral Threats
+##### Figure 2. Coral Threats
 ![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
 
-### Figure 3. Healthy Coral
+##### Figure 3. Healthy Coral
 ![](https://github.com/gitluis/coralviz/blob/master/images/healthy%20coral.jpg)
 
-### Figure 4. Bleaching Coral
+##### Figure 4. Bleaching Coral
 ![](https://github.com/gitluis/coralviz/blob/master/images/bleaching%20coral.jpg)
 
-### Figure 5. Black-band Disease
+##### Figure 5. Black-band Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/black-band%20disease.jpg)
 
-### Figure 6. White-band Disease
+##### Figure 6. White-band Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/white-band%20disease.jpg)
 
-### Figure 7. White plague Disease
+##### Figure 7. White plague Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/white%20plague%20disease.jpg)
 
-### Figure 8. Yellow-band, White-band, Black-band Diseases
+##### Figure 8. Yellow-band, White-band, Black-band Diseases
 ![](https://github.com/gitluis/coralviz/blob/master/images/black%20white%20and%20yellow%20band%20disease.jpg)
 
-### Figure 9. Dark-spot Disease
+##### Figure 9. Dark-spot Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/coral%20dark%20spot%20disease.jpg)
 
-### Figure 10. White Pox Disease
+##### Figure 10. White Pox Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/white%20pox%20disease.jpg)
 
-### Figure 11. White Plague Type 2 Disease
+##### Figure 11. White Plague Type 2 Disease
 ![](https://github.com/gitluis/coralviz/blob/master/images/white%20plague%20type%20ii%20disease.jpg)
