@@ -87,6 +87,31 @@ levels(ds$region)[1] = "NA"
 levels(ds$subregion)[1] = "NA"
 
 
+
+# replace -1 with NAs (o mortality level)
+mcode = ds$mortality_code
+mlevel = ds$mortality
+mrows = which(ds$mortality_code == -1)
+mcode[mrows] = NA
+mlevel[mrows] = NA
+
+# re-code NAs to Unknown
+mrows = which(is.na(mcode))
+mcode[mrows] = "Unknown"
+
+# save and convert to categorical
+mcode = as.factor(mcode)
+summary(mcode)
+
+# re-code levels
+levels(mcode) = c("No Mortality", "Low", "Medium", "High", "Unknown")
+
+# save data
+ds$mortality_code = mcode
+ds$mortality = mlevel
+
+
+
 # re-code coral families
 # ----------------------
 str(ds$coral_family)
@@ -95,9 +120,15 @@ families = ds$coral_family
 comma_in_string = function(x){
   return( grepl(",", x) )
 }
+word_and_in_string = function(x){
+  return( grepl("and", x) )
+}
 
 # retrieve which families can be converted
 rows = comma_in_string( levels(families) )
+levels(families)[rows] = "Mixed"
+
+rows = word_and_in_string( levels(families) )
 levels(families)[rows] = "Mixed"
 
 # save variable
@@ -107,20 +138,6 @@ ds$coral_family = families
 ds.categorical = ds[ , sapply(ds, is.factor)]
 barchart(get_column_index("coral_family", ds.categorical))
 
-
-# convert mortality code to factor
-# --------------------------------
-summary(ds$mortality_code)
-
-# 92% missing data
-5681/nrow(ds) * 100
-
-# convert
-mc = as.factor(ds$mortality_code)
-mc[which(is.na(mc))] = NA
-
-# save
-ds$mortality_code = mc
 
 
 # regex for float or int numbers only
@@ -167,7 +184,7 @@ length(which(is.na(m))) / nrow(ds) * 100
 
 # verify coral affected by bleaching (%)
 # --------------------------------------
-#   75% of 'percentage_affected' is missing data
+#   74% of 'percentage_affected' is missing data
 length(which(ds$percentage_affected == ""))
 length(which(ds$percentage_affected == "")) / nrow(ds) * 100
 
