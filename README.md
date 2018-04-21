@@ -27,8 +27,6 @@ Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for mor
 [5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
 
 ## Appendix
-![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
-Source: https://oceanservice.noaa.gov/facts/coral_bleach.html
+![4](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
 
-![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
-Source: https://oceanservice.noaa.gov/facts/coralreef-climate.html
+![5](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
