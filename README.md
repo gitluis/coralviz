@@ -10,15 +10,25 @@ The idea is to obtain a coral dataset containing coral information such as locat
 Coral datasets available inside the `data` directory.
 
 ## Coral Bleaching
-![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
-Source: https://oceanservice.noaa.gov/facts/coral_bleach.html
 
-## Coral Threats
-![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
-Source: https://oceanservice.noaa.gov/facts/coralreef-climate.html
 
 ## License
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
 
-## Citations
-ReefBase: A Global Information System for Coral Reefs. March, 2018. http://www.reefbase.org
+## References
+[1] NOAA. Are corals animals or plants? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on 04/21/2018.
+
+[2] ReefBase: A Global Information System for Coral Reefs. March, 2018. http://www.reefbase.org.
+
+[3] National Geographic. Coral Reefs 101 | National Geographic. November 7, 2017. https://youtu.be/ZiULxLLP32s.
+
+[4] NOAA. What is coral bleaching? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on March 2018.
+
+[5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
+
+## Appendix
+![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
+Source: https://oceanservice.noaa.gov/facts/coral_bleach.html
+
+![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
+Source: https://oceanservice.noaa.gov/facts/coralreef-climate.html
