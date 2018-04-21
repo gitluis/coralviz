@@ -85,12 +85,22 @@ Data: `CoralDisease.csv`
 
 | Dashboard | Description |
 | :-------- | :---------- |
+| Bleaching Observations Map | Coral reef observations colored by bleaching severity across the world. |
+| Coral Severity Levels | Overall number of coral reefs per bleaching severity (class). |
+| Coral Mortality Levels | Overall number of coral reefs per mortality level (class). |
+| Water Temperature over Years | Average water temperature over the years captured. Also displays it by bleaching severity. |
+| Percentage of Corals Bleached by Water Temperature | Percentage of corals bleached during observation as water temperature increases (hotter). |
+| Percentage of Corals Bleached by Mortality Level | Percentage of corals bleached during observation as mortality level increases. |
 
 ## Coral Disease Storyboard
 - [Coral Disease Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralDiseaseDataViz/CoralDiseaseDataViz)
 
 | Dashboard | Description |
 | :-------- | :---------- |
+| Disease Observations Map | Coal reef observations colored by disease type across the world. |
+| Coral Diseases | Overall number of coral reefs per disease. |
+| Percentage of Coral Disease by Area Affected | Percentage of coral disease incidence (rate) versus diseases area affected in the coral reef. |
+| Percentage of Coral Disease by Mortality Level | Percentage of coral disease incidence (rate) as mortality level increases. |
 
 ## License
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
