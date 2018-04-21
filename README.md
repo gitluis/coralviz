@@ -113,19 +113,21 @@ Data: `CoralDisease.csv`
 [5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
 
 ## Appendix
-![Reference 4](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
+![](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
+
 Figure 1. Coral Bleaching
 
-![Reference 5](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
+![](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
+
 Figure 2. Coral Threats
 
 ![](https://github.com/gitluis/coralviz/blob/master/images/healthy%20coral.jpg)
+
 Figure 3. Healthy Coral
 
 ![](https://github.com/gitluis/coralviz/blob/master/images/bleaching%20coral.jpg)
+
 Figure 4. Bleaching Coral
-
-
 
 ## License
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
