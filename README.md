@@ -21,7 +21,7 @@ Coral Bleaching is the process by which coral losses its own major source of foo
 
 In addition, coral can be affected by diseases caused by infections from bacteria, viruses or stressors as previously mentioned in Figure 2 which slowly kill the coral by consuming the living tissue or leaving large patches of living coral tissue to slough off exposing coral’s skeleton. Some of these diseases are Black-band disease, Dark-spot disease, Patchy necrosis (white pox), White plague, White-band disease, Yellow-band disease, Algae disease, Fungal disease and many others. See Figure 3 to Figure 11 in [Appendix](https://github.com/gitluis/coralviz#appendix) for a visual picture of coral diseases.
 
-## Coral Bleaching Data Preparation Summary
+## Data Preparation Summary
 Data: `CoralBleaching.csv`
 
 | Variable Name       | Variable Changes |
@@ -55,7 +55,6 @@ Data: `CoralBleaching.csv`
 | reference_code      | Dropped          |
 | country_code        |                  |
 
-## Coral Disease Data Preparation Summary
 Data: `CoralDisease.csv`
 
 | Variable Name        | Variable Changes |
@@ -80,7 +79,7 @@ Data: `CoralDisease.csv`
 | country_code         |                  |
 | source               |                  |
 
-## Coral Bleaching Storyboard
+## Data Visualization
 - [Coral Bleaching Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralBleachingDataViz/CoralBleachingDataViz)
 
 | Dashboard | Description |
@@ -92,7 +91,7 @@ Data: `CoralDisease.csv`
 | Percentage of Corals Bleached by Water Temperature | Percentage of corals bleached during observation as water temperature increases (hotter). |
 | Percentage of Corals Bleached by Mortality Level | Percentage of corals bleached during observation as mortality level increases. |
 
-## Coral Disease Storyboard
+
 - [Coral Disease Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralDiseaseDataViz/CoralDiseaseDataViz)
 
 | Dashboard | Description |
@@ -122,3 +121,6 @@ Figure 1. Coral Bleaching
 
 ![Reference 5](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
 Figure 2. Coral Threats
+
+![](https://github.com/gitluis/coralviz/blob/master/images/healthy%20coral.jpg)
+Figure 3. Healthy Coral
