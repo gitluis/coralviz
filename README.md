@@ -11,6 +11,7 @@ Coral datasets available inside the `data` directory. Coral data sets descriptio
 
 ## Coral Bleaching & Diseases
 Coral Bleaching is the process by which coral losses its own major source of food which is algae surrounding it (Figure 1). When algae leave the coral, it becomes vulnerable to diseases. This can be caused by many factors such as changes in ocean temperature, ocean pollution, overexposure to sunlight, extreme low tides, overall climate changes (CO2), ocean acidification (pH level changes), climate precipitation, altered ocean currents, storms, sea level rise, global warming and among many other (Figure 2).
+
 In addition, coral can be affected by diseases caused by infections from bacteria, viruses or stressors as previously mentioned in Figure 2 which slowly kill the coral by consuming the living tissue or leaving large patches of living coral tissue to slough off exposing coral’s skeleton. Some of these diseases are Black-band disease, Dark-spot disease, Patchy necrosis (white pox), White plague, White-band disease, Yellow-band disease, Algae disease, Fungal disease and many others. See Figure 3 to Figure 11 in [Appendix](https://github.com/gitluis/coralviz#appendix) for a visual picture of coral diseases.
 
 ## Coral Bleaching Data Preparation Summary
@@ -72,6 +73,18 @@ Data: `CoralDisease.csv`
 | country_code         |                  |
 | source               |                  |
 
+## Coral Bleaching Storyboard
+- [Coral Bleaching Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralBleachingDataViz/CoralBleachingDataViz)
+
+| Dashboard | Description |
+| :-------- | :---------- |
+
+## Coral Disease Storyboard
+- [Coral Disease Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralDiseaseDataViz/CoralDiseaseDataViz)
+
+| Dashboard | Description |
+| :-------- | :---------- |
+
 ## License
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information.
 
@@ -87,8 +100,8 @@ Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for mor
 [5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
 
 ## Appendix
-Figure 1. Coral Bleaching
 ![Reference 4](https://github.com/gitluis/coralviz/blob/master/images/coral-bleaching-explained.jpg)
+Figure 1. Coral Bleaching
 
-Figure 2. Coral Threats
 ![Reference 5](https://github.com/gitluis/coralviz/blob/master/images/coral-threats.png)
+Figure 2. Coral Threats
