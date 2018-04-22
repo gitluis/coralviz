@@ -6,7 +6,7 @@
 ## Abstract
 The idea is to obtain a coral dataset containing coral information such as location, coral bleaching, or coral diseases with enough different corals and/or metrics to generate multiple visualizations of the data set for further analysis. A dashboard containing different graphs showing the information in different forms which could even lead to detecting any similarities in between the coral samples.
 
-## Datasets
+## Coral Datasets
 Coral datasets available inside the `data` directory. Coral data sets descriptions can also be found in text format inside the `data` directory.
 
 ## Introduction
