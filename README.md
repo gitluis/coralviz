@@ -13,7 +13,6 @@ Coral datasets available inside the `data` directory. Coral data sets descriptio
 - [Coral Reefs 101 by National Geographic](https://www.youtube.com/watch?v=ZiULxLLP32s)
 
 Other Videos:
-- https://youtu.be/4RUGmBxe65U?t=46
 - https://youtu.be/5ET2B-bEduc?t=5
 
 ## Coral Bleaching & Diseases
