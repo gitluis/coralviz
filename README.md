@@ -11,7 +11,7 @@ What the data shows:
 - Mortality is unknown for 92% of bleaching observations, and water temperature is recorded for only 1,046 (17%), so the mortality and temperature views rest on a small subset of the data.
 
 ## Coral Datasets
-Coral datasets available inside the `data` directory. Coral data sets descriptions can also be found in text format inside the `data` directory.
+The coral datasets are in the `data` directory, a March 2018 snapshot from ReefBase, which is now offline. See [data/README.md](data/README.md) for each file's contents, encoding, source, and how to cite it.
 
 ## Introduction
 - [Coral Reefs 101 by National Geographic](https://www.youtube.com/watch?v=ZiULxLLP32s)
