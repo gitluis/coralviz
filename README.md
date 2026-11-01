@@ -7,7 +7,7 @@
 The idea is to obtain a coral dataset containing coral information such as location, coral bleaching, or coral diseases with enough different corals and/or metrics to generate multiple visualizations of the data set for further analysis. A dashboard containing different graphs showing the information in different forms which could even lead to detecting any similarities in between the coral samples.
 
 ## Coral Datasets
-Coral datasets available inside the `data` directory. Coral data sets descriptions can also be found in text format inside the `data` directory.
+The coral datasets are in the `data` directory, a March 2018 snapshot from ReefBase, which is now offline. See [data/README.md](data/README.md) for each file's contents, encoding, source, and how to cite it.
 
 ## Introduction
 - [Coral Reefs 101 by National Geographic](https://www.youtube.com/watch?v=ZiULxLLP32s)
