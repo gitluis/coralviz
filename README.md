@@ -1,7 +1,5 @@
 # Corals :telescope: :bar_chart:
-| Course    | Course Name                    | Student        |
-| :-------: | :----------------------------- | :------------- |
-| CAP 6737  | Interactive Data Visualization | Luis A. Rivera |
+Final project for **CAP 6737: Interactive Data Visualization** by Luis A. Rivera (2018).
 
 ## Summary
 This project visualizes two global coral datasets from ReefBase: 6,190 coral bleaching observations (1963–2012) and 7,354 coral disease observations. The raw data were cleaned and recoded in R, then published as two interactive Tableau Public workbooks with maps, distributions, and scatter plots of bleaching and disease against water temperature, mortality, and area affected.
@@ -174,17 +172,25 @@ Screenshots of every dashboard are in `images/dashboards` (captured October 2026
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information. Any work from NOAA or ReefBase must follow their respective citation, licensing and terms accordingly. Go to [NOAA.gov](https://www.noaa.gov/) or [ReefBase.org](http://www.reefbase.org/main.aspx) for more information.
 
 ## References
-[1] NOAA. Are corals animals or plants? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on 04/21/2018.
+Links checked October 31, 2026.
 
-[2] ReefBase: A Global Information System for Coral Reefs. March, 2018. http://www.reefbase.org.
+[1] NOAA National Ocean Service. "Are corals animals or plants?" https://oceanservice.noaa.gov/facts/coral.html. Accessed April 21, 2018.
 
-[3] National Geographic. Coral Reefs 101 | National Geographic. November 7, 2017. https://youtu.be/ZiULxLLP32s.
+[2] ReefBase: A Global Information System for Coral Reefs. http://www.reefbase.org. Accessed March 2018. The site is now offline; see `data/README.md` for how to cite the data.
 
-[4] NOAA. What is coral bleaching? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on March 2018.
+[3] National Geographic. "Coral Reefs 101." YouTube, November 7, 2017. https://www.youtube.com/watch?v=ZiULxLLP32s.
 
-[5] NOAA. How does climate change affect coral reefs? National Ocean Service website, https://oceanservice.noaa.gov/facts/coralreef-climate.html, accessed on March 2018.
+[4] NOAA National Ocean Service. "What is coral bleaching?" https://oceanservice.noaa.gov/facts/coral_bleach.html. Accessed March 2018.
+
+[5] NOAA National Ocean Service. "How does climate change affect coral reefs?" https://oceanservice.noaa.gov/facts/coralreef-climate.html. Accessed March 2018.
+
+[6] WorldFish. "Coral Bleaching Data." Harvard Dataverse, 2016. https://doi.org/10.7910/DVN/KUVQKY.
+
+[7] UNEP-WCMC and NOAA. "Global Coral Disease Database" (legacy). 2010. https://resources.unep-wcmc.org/products/WCMC_PT045.
 
 ## Appendix
+These images are included for informational and educational purposes only. Figures 1 and 2 are from the NOAA National Ocean Service [4][5]. Figures 3 to 11 were collected from public web sources in 2018, possibly including the references above, and their original sources were not recorded. None of these images are covered by this repository's MIT license, which applies to the code and documentation. If you own one of these images and would like it credited or removed, please open an issue.
+
 ##### Figure 1. Coral Bleaching
 ![](images/coral-bleaching-explained.jpg)
 
