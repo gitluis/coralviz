@@ -12,9 +12,6 @@ Coral datasets available inside the `data` directory. Coral data sets descriptio
 ## Introduction
 - [Coral Reefs 101 by National Geographic](https://www.youtube.com/watch?v=ZiULxLLP32s)
 
-Other Videos:
-- https://youtu.be/5ET2B-bEduc?t=5
-
 ## Coral Bleaching & Diseases
 Coral Bleaching is the process by which coral losses its own major source of food which is algae surrounding it [Figure 1](https://github.com/gitluis/coralviz#figure-1-coral-bleaching). When algae leave the coral, it becomes vulnerable to diseases. This can be caused by many factors such as changes in ocean temperature, ocean pollution, overexposure to sunlight, extreme low tides, overall climate changes (CO2), ocean acidification (pH level changes), climate precipitation, altered ocean currents, storms, sea level rise, global warming and among many other [Figure 2](https://github.com/gitluis/coralviz#figure-2-coral-threats).
 
@@ -79,7 +76,7 @@ Data: `CoralDisease.csv`
 | source               |                  |
 
 ## Data Visualization
-- [Coral Bleaching Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralBleachingDataViz/CoralBleachingDataViz)
+- [Coral Bleaching Data Viz](https://public.tableau.com/app/profile/luis.rivera4167/viz/CoralBleachingDataViz/CoralBleachingDataViz)
 
 | Dashboard | Description |
 | :-------- | :---------- |
@@ -91,7 +88,7 @@ Data: `CoralDisease.csv`
 | Percentage of Corals Bleached by Mortality Level | Percentage of corals bleached during observation as mortality level increases. |
 
 
-- [Coral Disease Data Viz](https://public.tableau.com/profile/luis.rivera4167#!/vizhome/CoralDiseaseDataViz/CoralDiseaseDataViz)
+- [Coral Disease Data Viz](https://public.tableau.com/app/profile/luis.rivera4167/viz/CoralDiseaseDataViz/CoralDiseaseDataViz)
 
 | Dashboard | Description |
 | :-------- | :---------- |
@@ -101,7 +98,7 @@ Data: `CoralDisease.csv`
 | Percentage of Coral Disease by Mortality Level | Percentage of coral disease incidence (rate) as mortality level increases. |
 
 ## License
-Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information. Any work from NOAA or ReefBase must follow their respective citation, licensing and terms accordingly. Go to [NOAA.gov](http://www.noaa.gov/) or [ReefBase.org](http://www.reefbase.org/main.aspx) for more information.
+Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information. Any work from NOAA or ReefBase must follow their respective citation, licensing and terms accordingly. Go to [NOAA.gov](https://www.noaa.gov/) or [ReefBase.org](http://www.reefbase.org/main.aspx) for more information.
 
 ## References
 [1] NOAA. Are corals animals or plants? National Ocean Service website, https://oceanservice.noaa.gov/facts/coral_bleach.html, accessed on 04/21/2018.
