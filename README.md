@@ -87,6 +87,28 @@ Data: `CoralDisease.csv`
 | Percentage of Corals Bleached by Water Temperature | Percentage of corals bleached during observation as water temperature increases (hotter). |
 | Percentage of Corals Bleached by Mortality Level | Percentage of corals bleached during observation as mortality level increases. |
 
+![Coral Bleaching Data Viz: Bleaching Observations Map](images/dashboards/bleaching-1-map.png)
+
+<details>
+<summary>More Coral Bleaching Data Viz dashboards</summary>
+
+#### Coral Severity Levels
+![Coral Severity Levels](images/dashboards/bleaching-2-severity-levels.png)
+
+#### Coral Mortality Levels
+![Coral Mortality Levels](images/dashboards/bleaching-3-mortality-levels.png)
+
+#### Water Temperature over Years
+![Water Temperature over Years](images/dashboards/bleaching-4-water-temperature-over-years.png)
+
+#### Percentage of Corals Bleached by Water Temperature
+![Percentage of Corals Bleached by Water Temperature](images/dashboards/bleaching-5-bleached-by-water-temperature.png)
+
+#### Percentage of Corals Bleached by Mortality Level
+![Percentage of Corals Bleached by Mortality Level](images/dashboards/bleaching-6-bleached-by-mortality.png)
+
+</details>
+
 
 - [Coral Disease Data Viz](https://public.tableau.com/app/profile/luis.rivera4167/viz/CoralDiseaseDataViz/CoralDiseaseDataViz)
 
@@ -96,6 +118,24 @@ Data: `CoralDisease.csv`
 | Coral Diseases | Overall number of coral reefs per disease. |
 | Percentage of Coral Disease by Area Affected | Percentage of coral disease incidence (rate) versus diseases area affected in the coral reef. |
 | Percentage of Coral Disease by Mortality Level | Percentage of coral disease incidence (rate) as mortality level increases. |
+
+![Coral Disease Data Viz: Disease Observations Map](images/dashboards/disease-1-map.png)
+
+<details>
+<summary>More Coral Disease Data Viz dashboards</summary>
+
+#### Coral Diseases
+![Coral Diseases](images/dashboards/disease-2-coral-diseases.png)
+
+#### Percentage of Coral Disease by Area Affected
+![Percentage of Coral Disease by Area Affected](images/dashboards/disease-3-by-area-affected.png)
+
+#### Percentage of Coral Disease by Mortality Level
+![Percentage of Coral Disease by Mortality Level](images/dashboards/disease-4-by-mortality.png)
+
+</details>
+
+Screenshots of every dashboard are in `images/dashboards` (captured October 2026). The packaged workbooks, with their data embedded, are in `tableau/` as `.twbx` files and open in Tableau Desktop or Tableau Public Desktop.
 
 ## License
 Go to [LICENSE](https://github.com/gitluis/coralviz/blob/master/LICENSE) for more information. Any work from NOAA or ReefBase must follow their respective citation, licensing and terms accordingly. Go to [NOAA.gov](https://www.noaa.gov/) or [ReefBase.org](http://www.reefbase.org/main.aspx) for more information.
